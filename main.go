@@ -149,6 +149,7 @@ func main() {
 
 	window.Add(vbox)
 	window.SetSizeRequest(480, 600)
+	window.SetIconFromFile("./icons/icon-small.png")
 	window.ShowAll()
 	webview.LoadString(getContent(), "text/html", "utf-8", ".")
 
