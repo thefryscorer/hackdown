@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/thefryscorer/hackdown/master/icon.png" width="100px">
+<img src="https://raw.githubusercontent.com/thefryscorer/hackdown/master/icons/icon.png" width="100px">
 # Hackdown
 
 A super-simple, somewhat hacky markdown viewer.
