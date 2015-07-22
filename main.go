@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"os"
+
+	//	"github.com/mattn/go-gtk/gdkpixbuf"
 	"github.com/mattn/go-gtk/gtk"
 	"github.com/mattn/go-webkit/webkit"
 	"github.com/russross/blackfriday"
-	"io/ioutil"
-	"os"
 )
 
 var addr string
@@ -149,7 +151,13 @@ func main() {
 
 	window.Add(vbox)
 	window.SetSizeRequest(480, 600)
-	window.SetIconFromFile("./icons/icon-small.png")
+	bytesSlice := bytesFromXpmData(xpm_data)
+
+	icon_file := "/tmp/hackdown-icon.xpm"
+
+	ioutil.WriteFile(icon_file, bytesSlice, os.ModePerm)
+
+	window.SetIconFromFile(icon_file)
 	window.ShowAll()
 	webview.LoadString(getContent(), "text/html", "utf-8", ".")
 
