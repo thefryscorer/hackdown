@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Hackdown
+Comment=Markdown viewer
+Exec=hackdown %u
+# Icon can be evinces for now
+Icon=evince
+Type=Application
+Categories=Office;Viewer;
+MimeType=text/plain
