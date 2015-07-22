@@ -1,3 +1,4 @@
+![Icon](https://raw.githubusercontent.com/thefryscorer/hackdown/master/icon.png)
 # Hackdown
 
 A super-simple, somewhat hacky markdown viewer.
